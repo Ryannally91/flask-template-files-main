@@ -1,0 +1,16 @@
+{%extends "layout.html"%}{% block body%}
+<div class="mb-3">
+  <h2 class="title">Add a Friend</h2>
+  <form action="/create_friend" method="POST">
+    <label for="first_name">First Name:</label>
+    <input type="text" class="form-control" name="first_name" />
+    <label for="last_name">Last Name:</label>
+    <input type="text" class="form-control" name="last_name" />
+    <label for="email">email:</label>
+    <input type="text" class="form-control" name="email" />
+  </div>
+    <input type="submit" class="btn btn-primary" id="add" value="Add Friend" />
+  </form>
+
+
+{% endblock %}
